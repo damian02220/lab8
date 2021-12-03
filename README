@@ -1,0 +1,12 @@
+Programowanie full-stack w chmurze obliczeniowej
+Laboratorium 8
+
+Projekt zawiera Dockerfile oraz plik index.html konieczne do uruchomienia prostego serwera strony interentowej na oferujacej uzytkownikom mozliwosc wyswietlenia wartosci ciagu Fibonacciego dla wybranego argumentu. Do realizacji zadania wykorzystano obraz httpd w wersji latest z serwisu DockerHub. Jako ze serwis ma jedynie wykonac dla uzytkownika proste dzialania matematyczne, zdecydowano iz obliczanie elementu ciagu Fibonacciego bedzie sie odbywalo po stronie klienta, co pozwala na oszczedzenie zasobow serwera oraz zmniejsza rozmiar obrazu, poniewaz nie jest potrzebny np. interpreter PHP. Strone internetowa napisano w jezyku HTML, natomiast za wykonanie obliczen oraz obsluge interakcji z uzytkownikem odpowiada skrypt jezyka JavaScript. Obydwa te skladniki strony internetowej umieszczone zostaly w pliku index.html. Plik Dockerfile pozwala na proste stworzenie obrazu, a nastepnie uruchomienie kontenera w srodowisku docker. 
+
+Zalecana konfiguracja sprzetowa dla uruchomienia serwisu:
+System operacyjny Linux w dystrybucji Ubuntu
+Zainstalowane narzedzia git oraz docker
+Lacze sieciowe
+
+Instrukcja uruchomienia serwisu na wlasnym sprzecie:
+
