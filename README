@@ -8,5 +8,9 @@ System operacyjny Linux w dystrybucji Ubuntu
 Zainstalowane narzedzia git oraz docker
 Lacze sieciowe
 
-Instrukcja uruchomienia serwisu na wlasnym sprzecie:
-
+W celu uruchomienia serwisu na wlasnym komputerze prosze wykonac nastepujace dzialania:
+1. Pobrac i rozpakowac plik ZIP z repozytorium damian02220/lab8 lub sklonowac repozytorium za pomoca polecenia git clone https://github.com/damian02220/lab8.git.
+2. Przesc do folderu z plikami pobranymi z repozytorium.
+3. Zbudowac obraz za pomoca polecenia docker build -t <wlasna_nazwa_dla_obrazu> .
+4. Uruchomic kontener za pomoca polecenia docker run --name <wlasna_nazwa_dla_kontenera>  -p 8080:80 <wlasna_nazwa_dla_obrazu>
+5. Za pomoca przegladarki wejsc pod adres localhost:8080. Strona internetowa jest gotowa do uzytku. 
