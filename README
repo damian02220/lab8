@@ -3,6 +3,20 @@ Laboratorium 8
 
 Projekt zawiera Dockerfile oraz plik index.html konieczne do uruchomienia prostego serwera strony interentowej na oferujacej uzytkownikom mozliwosc wyswietlenia wartosci ciagu Fibonacciego dla wybranego argumentu. Do realizacji zadania wykorzystano obraz httpd w wersji latest z serwisu DockerHub. Jako ze serwis ma jedynie wykonac dla uzytkownika proste dzialania matematyczne, zdecydowano iz obliczanie elementu ciagu Fibonacciego bedzie sie odbywalo po stronie klienta, co pozwala na oszczedzenie zasobow serwera oraz zmniejsza rozmiar obrazu, poniewaz nie jest potrzebny np. interpreter PHP. Strone internetowa napisano w jezyku HTML, natomiast za wykonanie obliczen oraz obsluge interakcji z uzytkownikem odpowiada skrypt jezyka JavaScript. Obydwa te skladniki strony internetowej umieszczone zostaly w pliku index.html. Plik Dockerfile pozwala na proste stworzenie obrazu, a nastepnie uruchomienie kontenera w srodowisku docker. 
 
+Przebieg wykonania zadania:
+1. Stworzono nowy folder lab8.
+2. Zainicjowano lokalne repozytorium w folderze lab8.
+3. Stworzono pliki Dockerfile, README i index.html (tresc plikow znajduje sie w repozytorium).
+4. Pobrano obraz httpd.
+5. Uruchomiono kontener na podstawie Dockerfile, skonfigurowano rowniez udostepnianie portu.
+6. Przetestowano dzialanie kontenera w przegladarce internetowej pod adresem localhost.
+7. Skonfigurowano e-mail oraz nazwe uzytkownika dla narzedzia git.
+8. Dodano pliki do sledzenia przez program git, nastepnie dodano do lokalnego repozytorium.
+9. Pobrano z GitHuba token (od niedawna na GitHubie nie mozliwa jest autoryzacja uzytkownika w programie git za uzyciem hasla, nalezy zamiast tego uzyc tokenu)
+10. Wybrano odgalezienie main.
+11. Przeslano pliki na GitHuba.
+
+
 Zalecana konfiguracja sprzetowa dla uruchomienia serwisu:
 System operacyjny Linux w dystrybucji Ubuntu
 Zainstalowane narzedzia git oraz docker
